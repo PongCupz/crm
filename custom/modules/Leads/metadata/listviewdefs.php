@@ -1,0 +1,72 @@
+<?php
+$listViewDefs ['Leads'] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_NAME',
+    'link' => true,
+    'orderBy' => 'name',
+    'default' => true,
+    'related_fields' => 
+    array (
+      0 => 'first_name',
+      1 => 'last_name',
+      2 => 'salutation',
+    ),
+  ),
+  'STATUS' => 
+  array (
+    'width' => '7%',
+    'label' => 'LBL_LIST_STATUS',
+    'default' => true,
+  ),
+  'PHONE_MOBILE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_MOBILE_PHONE',
+    'default' => true,
+  ),
+  'EMAIL1' => 
+  array (
+    'width' => '16%',
+    'label' => 'LBL_LIST_EMAIL_ADDRESS',
+    'sortable' => false,
+    'customCode' => '{$EMAIL1_LINK}',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_LIST_ASSIGNED_USER',
+    'module' => 'Employees',
+    'id' => 'ASSIGNED_USER_ID',
+    'default' => true,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => true,
+  ),
+  'LEAD_SOURCE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LEAD_SOURCE',
+    'default' => false,
+  ),
+  'CREATED_BY' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_CREATED',
+    'default' => false,
+  ),
+  'MODIFIED_BY_NAME' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_MODIFIED',
+    'default' => false,
+  ),
+);
+;
+?>
